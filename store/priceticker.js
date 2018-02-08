@@ -32,10 +32,9 @@ export const mutations = {
   }
 }
 export const actions = {
-  mySubscription({ commit }, {authToken}) {
+  getInitialDiff({ commit }, {authToken}) {
     return new Promise((resolve, reject) => {
-    caller.get(apiUrls.getMySubscription(), authToken).then((response) => {
-      commit('MYSUBSCRIPTION', response.data)
+    caller.get(apiUrls.getInitialDiff, authToken).then((response) => {
       resolve(response)
     }).catch((error) => {
       if (error.response && error.response.data) {
