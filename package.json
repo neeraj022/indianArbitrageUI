@@ -1,0 +1,39 @@
+{
+  "name": "indianarbitrageui",
+  "version": "1.0.0",
+  "description": "a project for showcasing the profit on arbitrage on indian platforms",
+  "author": "neerajyadav022@gmail.com",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "axios": "0.16.2",
+    "fs": "0.0.1-security",
+    "nuxt": "1.0.0-rc8",
+    "socket.io": "^2.0.4",
+    "vue-socket.io": "^2.1.1-b"
+  },
+  "devDependencies": {
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "babel-eslint": "7.2.3",
+    "eslint": "4.3.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-html": "3.1.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "node-sass": "4.5.3",
+    "pm2": "2.7.1",
+    "sass-loader": "6.0.6",
+    "vue-masonry-css": "1.0.0"
+  }
+}

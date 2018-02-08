@@ -1,0 +1,41 @@
+@media (max-width: 1260px){
+	.sideProfileInfo{ min-width: 350px }
+	.userInfoBox{ margin: 0 0 0 10px }
+	.homePage .sideProfileInfo{ min-width: 404px;}
+	.leftMenu{ padding: 15px 0 0 }
+	.sideProfileInfoStudy { min-width: 160px;}
+	.sideProfileInfoBuddy {min-width: 160px!important;}
+	.sideProfileInfoStudy .leftMenu ul li.active:after {right: -42px;}
+	.srchBox{  margin-right:130px }
+	.sideProfileInfo.sideProfileInfoProfile{     min-width: 260px; }
+	.editTheme { top: 5px; right: 5px;
+		.material-icons{ font-size: 18px}
+	}
+	.sideProfileInfo{padding-top: 30px}
+}
+@media (max-width: 1160px){
+	.header .nav ul{ padding-left: 250px; }
+	.conMidSec{ padding: 0 40px }
+	.header .headMid .container{padding: 0 30px}
+	.buddylistinline{ margin-right: -20px  }
+	.buddySec .buddycustom-box{ max-width: 390px }
+	.referForm{ margin: 100px 0 0 }
+	.header .logo{ left: 30px }
+	body{ min-width: 1100px }
+	.header .userMenu li.stngBnt .dropdown-menu li a{ padding: 15px 30px }
+}
+@media (max-width: 1000px){
+	.HelpPage{
+	  .itemOuterRow{  
+	    .item{ width: 48%  }
+	  }
+	}
+}
+@media (max-width:700px){
+	.HelpPage{
+	  .itemOuterRow{ 
+	    .item{ width: 100%; margin:0 0 30px }
+	  }
+	}
+	.stataticPageOuter .queAnsSec li .ansSec{     padding: 0;}
+}

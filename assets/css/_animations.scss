@@ -1,0 +1,105 @@
+// animations
+
+ 
+@keyframes opacityEffect {
+  0% {
+    opacity: 0
+  }
+  
+  100% {
+     opacity: 1
+  }
+}
+
+.pEditProfileBtn,
+.shrePopupBox,.postItem .hwoLikes img,.buddySec .buddycustom-box,.conMidSec,.userInfoBox,.leftMenu,.item,.btnCommentEdit .dropdown-menu, .btnEdit .dropdown-menu{
+  animation: opacityEffect 0.8s;
+}
+
+
+
+@keyframes commentBoxAnim {
+  0% {
+   opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.commentList .cmtBox,.nestedComments{animation: commentBoxAnim 0.5s;}
+
+
+@keyframes aa {
+  0% {
+   opacity: 0;
+   margin: -50px 0 0;
+  }
+  100% {
+    opacity: 1;
+    margin: 0
+  }
+}
+.postDetailsInner{
+  .modal-footer{ animation: aa 0.2s;} 
+}
+ 
+
+
+
+@keyframes addBuddy {
+  0% {
+   opacity: 0;
+   width: 0;
+   }
+  100% {
+     opacity: 1;
+    width: 180px
+   }
+}
+
+.statusBtns .addFriendSearch .form-control{animation: addBuddy 0.5s;}
+
+
+
+@keyframes menuArrow {
+  0% {
+   width: 0;
+   }
+  100% {
+      width: 20px
+   }
+}
+
+.leftMenu ul li.active:after,
+.linksBox a.active.active:after, 
+.linksBox a:hover.active:after{
+	animation: menuArrow 0.7s;
+}
+
+@keyframes notesPop {
+  0% {
+  	max-height: 0
+   }
+  100% {
+      max-height: 500px
+   }
+}
+.notesPop .bodyInner{
+	animation: notesPop 0.4s;
+}
+
+@keyframes animationDog {
+  0% {
+    left: -200px;  
+  
+   }
+  
+  100% {
+     left: 200px; 
+     
+   } 
+}
+
+
+
+

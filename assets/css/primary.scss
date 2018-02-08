@@ -1,0 +1,178 @@
+@import "bootstrap/variables";
+@import "sitevariables";
+
+
+
+.primaryClassBody{ 
+  .header{
+    .nav{
+      li{
+        &.active:before{ content: ''; width: 0; height: 0; border-left: 10px solid transparent;border-right: 10px solid transparent; border-top: 10px solid #ffcc4b; position: absolute; bottom: -10px; left: calc(50% - 10px)}
+        a{ background: #ffcc4b; color: $colorWhite; border-color: #ffcc4b }
+        &:nth-child(2){
+          a{ background: #90d165;border-color: #90d165 }
+          &:before{border-top: 10px solid #90d165;}
+
+        }
+        &:nth-child(3){
+          a{ background: #ff8e64; border-color: #ff8e64 }
+          &:before{border-top: 10px solid #ff8e64;}
+        }
+        
+      }
+    }
+  }
+  .header .nav li a .homeIco { background-position: 2px -87px;}
+  .header .nav li a .studyIco { background-position: -37px -87px;}
+  .header .nav li a .buddyIco { background-position: -76px -87px;}
+  
+  .primaryViewPosts,
+  .primaryContentSec{ padding: 0 20px 0 0;
+    .btn-white{ border-radius: 30px }
+  } 
+  .primaryContentSecInner{ padding: 15px; border-radius: 20px; background: $colorWhite; box-shadow: 0 0 20px rgba(0,0,0,0.2); margin: 20px 0 0; min-height: calc(100vh - 200px);
+    .welcomText{ text-align: center; padding: 10px 0 }
+    .activityMoreBtn{ position: static; }
+    .activityGrphSec{ margin: 0 }
+  }
+  
+  .gamebox{ text-align: center; min-height: 300px  }
+  .playBtn{ text-align: center; font-size: 16px;
+    span{ border-bottom: $colorPrimary 2px solid; }
+  }
+
+  .item{ color:$colorWhite;
+      .thumb:after{ width: 100%; height: 100%; background:#000; opacity: 0.9; position: absolute; left: 0; top: 0; content: ''; opacity: 0.45;border-radius: 4px 4px 0 0}
+      &:nth-child(1n) .thumb:after {background: #7f7bff;}
+      &:nth-child(2n) .thumb:after {background: #fa80c4;}
+      &:nth-child(3n) .thumb:after {background: #3d96e1;}
+      /*&:nth-child(4n) .thumb:after {background: #da90b1;}*/
+
+       &:nth-child(1n) {background: #7f7bff;}
+      &:nth-child(2n) {background: #fa80c4;}
+      &:nth-child(3n) {background: #3d96e1;}
+      /*&:nth-child(4n) {background: #da90b1;}*/
+
+  }
+  .item .thumb .articleicon, .item .thumb .audioicon, .item .thumb .texticon, .item .thumb .vidicon{
+    transform: scale(2); left: calc(50% - 10px); top: calc(50% -15px);
+  }
+  .homeGamgeSec{ display: block; }
+  .primarySubjectsList.subjectsList ul li{width: 150px;
+    &:hover{ transform: scale(1.2); }
+  }
+  .primarySubjectsList.subjectsList{ margin:30px 0; }
+  .primarySubjectsList.subjectsList ul .subImg{ width: 150px; height: 150px; border-radius: 12px; background: $colorWhite; box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    img{ width: 60px; height: 60px; margin: 45px 0 0 }
+    
+  }
+
+
+.notprimarySubjectPage{ display: none!important;}
+.primarySubjectPage{ display: block!important;
+  .pclose{    background: #eaeaea; width: 30px;height: 30px; border-radius: 3px;display: block;  font-size: 20px; text-align: center;line-height: 30px; margin: 0 0 5px;}
+   
+  .subjectTop{ width: 272px; border-radius: 12px; padding: 45px; background: $colorWhite; box-shadow: 0 0 25px rgba(0,0,0,.2); float: left; 
+    .info{ margin: 0 }
+    .img{ float: none; margin: 0 0 20px }
+    h4{ font-size: 30px }
+    .btn-border-blue{ background: $colorPrimary; color: $colorWhite!important; font-weight: $flight; font-size: 14px;
+      .myprogressIco{ background-image: url(~assets/images/progress_white.png); background-size: 17px}
+    }
+  }
+  .subDetailSec{ margin: 0 0 0 300px }
+  .subTopHed{  font-size: 21px; font-weight: $fthin; margin: 0 0 20px }
+   .topicListStatusDetails .info{ margin-top: -34px!important; width: 100%}
+  .topicListStatusDetails .poitstext { padding-left: 115px; }
+  .topicListStatus .poitstext .col span{ color: $colorWhite;font-weight: $flight}
+  .topicListStatus h4,
+  .topicListStatus h4:hover{ color: $colorWhite; padding:0; margin: 0 }
+  .topicListStatus .poitstext{ font-size: 14px;color: $colorWhite; font-weight: $fthin }
+  .topicListStatus ul li .c100,
+  .topicListStatus ul li.completed h4 .material-icons{ position: absolute; right: 15px; top:20px; }
+  .topicListStatus .poitstext .col{ font-weight: $fthin}
+  .topicListStatus ul li.completed h4 .material-icons{ background: rgba(0,0,0,0.3); }
+  .subtopicOuter{ background: #fa80c4; border-radius: 6px; padding: 15px;  box-shadow: 0 0 25px rgba(0,0,0,.2); color: $colorWhite; position: relative;}
+  .topicListStatus ul li:nth-child(2n) .subtopicOuter{ background: #90d165 }
+  .c100:after{ background:  #fa80c4!important; }
+  .c100>span{ color: $colorWhite }
+  .c100 .bar{ border-color: rgba(0,0,0,0.4)!important }
+  .topicListStatus ul li{ margin: 0 0 15px; border: 0 }
+  .topicListStatus ul li:nth-child(2n) { 
+    .topiCheckList .flag,
+    .topiCheckList .subListingBox{ border:2px solid #90d165 }
+     .topiCheckList:before{ border-bottom-color: #90d165!important;}
+     .c100:after{ background:  #90d165!important; }
+  }
+
+    .topicListStatusDetails .topiCheckList{ padding:0; margin: 30px 0; position: relative;
+      &:after, &:before {
+        bottom: 99%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        top: -40px
+      }
+
+      &:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #ffffff;
+        border-width: 18px;
+        margin-left: -18px;
+        top: -33px
+      }
+      &:before {
+        border-color: rgba(255, 185, 224, 0);
+        border-bottom-color: #ffb9e0;
+        border-width: 21px;
+        margin-left: -21px;
+      }
+    }
+    .topicListStatusDetails .topiCheckList .trow{ background:none; border:0; position: relative; margin: 40px; padding: 0;
+      &:before{height: calc(100% - 36px); top: 4px;left: 7px; }
+    }
+    .topicListStatusDetails .topiCheckList .subListingBox{ box-shadow: 0 0 25px rgba(0,0,0,.2); border:2px solid #ffb9e0; border-radius: 10px; min-height: 240px; position: relative; }
+    .topicListStatus .info{ overflow: visible; }
+    .topicListStatusDetails .topiCheckList .flag{ width: 74px; height: 74px; line-height: 95px;border:2px solid #ffb9e0; bottom: -34px; margin-left: -37px;
+      .material-icons{ font-size: 38px } 
+    }
+    .flagRemaining{ padding: 45px 0 15px }
+    .remainingTopicsCart{ position: absolute; right: 40px; bottom: 30px; height: 150px; width: 130px; background:  url(~assets/images/mascotPrimary.png) no-repeat right bottom;
+      label{ background: #39c1c7; border-radius: 6px; padding:7px 10px; color: $colorWhite; font-weight: $flight; font-size: 12px }
+    }
+  }
+  .ActivityGraphArea{ margin: 0 20px 20px }
+  
+}
+.homePage{
+  .conMidSec{ padding: 0 }
+  .tbs li{ margin-bottom: -1px }
+  .tbs li a{ color: $colorWhite }
+  .tbs li.active a{ color: $colorExtraDark; border-bottom:2px solid $colorExtraDark }
+  .sideProfileInfo{ z-index: 2; background: none!important }
+  .userInfoBox .infoTop{ padding: 0 0 10px }
+  .userInfoBox .infoTop .img,
+  .userInfoBox .infoTop .img img{ width: 100%; height: auto; }
+   .userInfoBox .infoTop .img .picPlaceHolder{ width: 100%; height: 200px; line-height: 200px; font-size: 120px }
+  .contentSec{ padding: 0  }
+  .leftMenu{ width: 100px; margin-right: 36px; 
+    ul li{ padding-bottom: 30px }
+    ul li:before{ content: ''; width: 100%; height: 94px; border-radius:10px 45px 10px 10px;  background: rgba(250, 128, 196, 0.6); position: absolute; left: 0; top: 0 }
+    ul li:nth-child(2):before{background:rgba(67, 205, 99, 0.6)}
+    ul li:nth-child(3):before{background:rgba(152, 87, 188, 0.6)}
+    ul li:nth-child(4):before{background:rgba(255, 204, 75, 0.6)}
+    ul li a{ position: relative; z-index: 1 }
+    ul li.active:before{ border-radius:45px 10px  10px 10px ;  }
+  }
+  .pagebox{ position: relative;
+    .pageboxOver{background:#FFA4BA url(~assets/images/texturepink.png); position: absolute; height: 100%; width: 100%; display: block; z-index: 1; display: block; border-radius: 0 }
+  }
+  .contentSec,.sideProfileInfo{ z-index: 2; background: none }
+  .leftMenu ul li.active:after{ display: none; }
+  .sideProfileInfo{ min-width: 480px }
+  .welcomText{ color: $colorWhite}
+}
