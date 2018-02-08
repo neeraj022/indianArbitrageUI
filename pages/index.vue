@@ -1,21 +1,21 @@
 <template>
 <div>
-  <div class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse arbitrageHeading">
+  <div class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse arbitrageHeading" style="width:100%">
       <h4>Indian Arbitrage</h4>
     </div>
-    <div class="container-fluid">
-      <div class="row">
+    <!-- <div class="container-fluid">
+      <div class="row"> -->
 
-        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3" style="width:100%">
           
           
           <div class="panel panel-default">
-            <div class="panel-body" style="{text-size}">Indian Money</div>
+            <div class="panel-body centerAlign">Indian Money</div>
           </div>
 
           <section class="row text-center placeholders">
-            <div class="col-6 col-sm-3 placeholder" style="margin-left: 50px">
-              <table class="table table-striped table-bordered" style="width: 1000px">
+            <div class="col-6 col-sm-3 placeholder" style="width:100%">
+              <table class="table table-striped table-bordered">
     <thead>
       <tr>
         <th>Type</th>
@@ -58,12 +58,12 @@
 
 
           <div class="panel panel-default">
-            <div class="panel-body" style="{text-size}">BTC Buy/Transfer</div>
+            <div class="panel-body centerAlign">BTC Buy/Transfer</div>
           </div>
 
           <section class="row text-center placeholders">
-            <div class="col-6 col-sm-3 placeholder" style="margin-left: 50px">
-              <table class="table table-striped table-bordered" style="width: 1000px">
+            <div class="col-6 col-sm-3 placeholder" style="width: 100%">
+              <table class="table table-striped table-bordered">
     <thead>
       <tr>
         <th colspan="2">BTC Buy</th>
@@ -97,12 +97,12 @@
 
 
           <div class="panel panel-default">
-            <div class="panel-body" style="{text-size}">ETH Buy/Transfer</div>
+            <div class="panel-body centerAlign">ETH Buy/Transfer</div>
           </div>
 
           <section class="row text-center placeholders">
-            <div class="col-6 col-sm-3 placeholder" style="margin-left: 50px">
-              <table class="table table-striped table-bordered" style="width: 1000px">
+            <div class="col-6 col-sm-3 placeholder" style="width: 100%">
+              <table class="table table-striped table-bordered">
     <thead>
       <tr>
         <th colspan="2">ETH Buy</th>
@@ -135,12 +135,12 @@
 
 
           <div class="panel panel-default">
-            <div class="panel-body" style="{text-size}">XRP Buy/Transfer</div>
+            <div class="panel-body centerAlign">XRP Buy/Transfer</div>
           </div>
 
           <section class="row text-center placeholders">
-            <div class="col-6 col-sm-3 placeholder" style="margin-left: 50px">
-              <table class="table table-striped table-bordered" style="width: 1000px">
+            <div class="col-6 col-sm-3 placeholder" style="width: 100%">
+              <table class="table table-striped table-bordered">
     <thead>
       <tr>
         <th colspan="2">XRP Buy</th>
@@ -173,12 +173,12 @@
 
 
           <div class="panel panel-default">
-            <div class="panel-body" style="{text-size}">BCH Buy/Transfer</div>
+            <div class="panel-body centerAlign">BCH Buy/Transfer</div>
           </div>
 
           <section class="row text-center placeholders">
-            <div class="col-6 col-sm-3 placeholder" style="margin-left: 50px">
-              <table class="table table-striped table-bordered" style="width: 1000px">
+            <div class="col-6 col-sm-3 placeholder" style="width: 100%">
+              <table class="table table-striped table-bordered">
     <thead>
       <tr>
         <th colspan="2">BCH Buy</th>
@@ -364,8 +364,8 @@
 
            -->
         </main>
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
   </div>
 </template>
 
@@ -555,5 +555,9 @@ export default {
   text-align: center;
   font-size: large;
   color: white;
+}
+.centerAlign {
+  text-align: center;
+  font-size: large;
 }
 </style>
