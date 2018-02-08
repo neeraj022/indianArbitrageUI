@@ -9,7 +9,7 @@
         <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3" style="width:100%">
           
           
-          <div class="panel panel-default">
+          <div class="panel panel-default darkbackground" >
             <div class="panel-body centerAlign">Indian Money</div>
           </div>
 
@@ -18,8 +18,8 @@
               <table class="table table-striped table-bordered">
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Value</th>
+        <th >Type</th>
+        <th >Value</th>
       </tr>
     </thead>
     <tbody class="table-hover table-bordered table">
@@ -57,7 +57,7 @@
           </section>
 
 
-          <div class="panel panel-default">
+          <div class="panel panel-default darkbackground">
             <div class="panel-body centerAlign">BTC Buy/Transfer</div>
           </div>
 
@@ -96,7 +96,7 @@
 
 
 
-          <div class="panel panel-default">
+          <div class="panel panel-default darkbackground">
             <div class="panel-body centerAlign">ETH Buy/Transfer</div>
           </div>
 
@@ -134,7 +134,7 @@
           </section>
 
 
-          <div class="panel panel-default">
+          <div class="panel panel-default darkbackground">
             <div class="panel-body centerAlign">XRP Buy/Transfer</div>
           </div>
 
@@ -172,7 +172,7 @@
           </section>
 
 
-          <div class="panel panel-default">
+          <div class="panel panel-default darkbackground">
             <div class="panel-body centerAlign">BCH Buy/Transfer</div>
           </div>
 
@@ -559,5 +559,12 @@ export default {
 .centerAlign {
   text-align: center;
   font-size: large;
+  color: white;
+}
+.darkbackground {
+  background-color: grey;
+}
+.table th {
+  text-align: center;
 }
 </style>
