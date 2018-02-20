@@ -3,12 +3,16 @@
   <div class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse arbitrageHeading" style="width:100%">
       <h4>Indian Arbitrage</h4>
     </div>
-    <!-- <div class="container-fluid">
-      <div class="row"> -->
 
         <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3" style="width:100%">
           
-          
+          <div class="priceDivParent lightbackground">
+            <div class="priceDivs">BTC : {{koinexTicker.BTC}}</div>
+            <div class="priceDivs">ETH : {{koinexTicker.ETH}}</div>
+            <div class="priceDivs">XRP : {{koinexTicker.XRP}}</div>
+            <div class="priceDivs">BCH : {{koinexTicker.BCH}}</div>
+            <div class="priceDivs">LTC : {{koinexTicker.LTC}}</div>
+          </div>
           <div class="panel panel-default darkbackground" >
             <div class="panel-body centerAlign">Indian Money</div>
           </div>
@@ -564,7 +568,18 @@ export default {
 .darkbackground {
   background-color: grey;
 }
+.lightbackground {
+  background-color: burlywood;
+}
 .table th {
   text-align: center;
+}
+.priceDivs {
+  float: left;
+  padding-left: 20%;
+}
+.priceDivParent {
+  padding: 20px 0px 60px 0px;
+  margin-bottom: 30px;
 }
 </style>
