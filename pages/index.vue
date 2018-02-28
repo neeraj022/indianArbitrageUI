@@ -2,6 +2,7 @@
 <div>
   <div class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse arbitrageHeading" style="width:100%">
       <h4>Indian Arbitrage</h4>
+      <h4>Website Views {{viewCount}}</h4>
     </div>
 
         <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3" style="width:100%">
@@ -386,6 +387,7 @@ export default {
         this.btcTickerSetter (response.data.btcTicker)
         this.xrpTickerSetter (response.data.xrpTicker)
         this.bchTickerSetter (response.data.bchTicker)
+        this.viewCount = response.data.viewCount
       } 
     })
   },
@@ -398,7 +400,8 @@ export default {
       ethTicker: {},
       btcTicker: {},
       xrpTicker: {},
-      bchTicker: {}
+      bchTicker: {},
+      viewCount: ''
     }
   },
   methods: {
